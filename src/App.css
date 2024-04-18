@@ -1,0 +1,20 @@
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 1rem;
+  background-image: url(../src/assets/fotoperfumes3.jpg);
+  background-size: cover;
+}
+
+
+
+.headerClass{
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #ff13a7;
+  background-size: cover;
+}
+

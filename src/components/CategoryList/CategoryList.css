@@ -1,0 +1,16 @@
+ul {
+    display: flex;
+    margin: 10px;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    li {
+        margin: 5px;
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+    }
+}
