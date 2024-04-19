@@ -12,7 +12,13 @@ function App() {
         <Brand/>
         <NavBar/>
       </div>
-    <ItemListContainer greating="Hola"/>
+      <div className='body'>
+        <ItemListContainer greating="Hola WidiFollowers"/>
+      </div>
+      <div className='footer'>
+        <Footer/>
+      </div>
+    
     </div>
   )
 }
