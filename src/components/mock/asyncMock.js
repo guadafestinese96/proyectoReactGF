@@ -5,7 +5,7 @@ const perfumes = [
     nombre: "Lady Million",
     precio: 26000,
     stock: 2,
-    image: "../Perfumes/ladyMillion.jpg"
+    image: "../src/Perfumes/ladyMillion.jpg"
 },
 {
     id: 2,
@@ -13,23 +13,23 @@ const perfumes = [
     nombre: "Black XS L'Excess Femenino",
     precio: 26000,
     stock: 1,
-    image: "../Perfumes/blackXsLexcessM.jpg"
+    image: "../src/Perfumes/blackXsLexcessM.jpg"
 },
 {
     id: 3,
     marca: "Paco Rabanne",
     nombre: "One Million",
     precio: 26000,
-    stock: 2,
-    image: "../Perfumes/oneMillion.jpg"
+    stock: 8,
+    image: "../src/Perfumes/oneMillion.jpg"
 },
 {
     id: 4,
     marca: "Paco Rabanne",
     nombre: "Black XS L'excess Masculino",
     precio: 26000,
-    stock: 2,
-    image: "../Perfumes/blackXsLexcessH.jpg"
+    stock: 5,
+    image: "../src/Perfumes/blackXsLexcessH.jpg"
 }
 ]
 
