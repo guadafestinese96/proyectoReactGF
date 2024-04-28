@@ -1,5 +1,13 @@
 .navBarClass{
     display: flex;
     align-items: center;
-  
   }
+
+  .logoWidiImg{
+    padding: 5px;
+    margin: 10px;
+    width: 100px;
+    border: 2px solid black;
+    border-radius: 100%;
+  }
+

@@ -10,8 +10,9 @@ body{
 .headerClass{
   display: flex;
   justify-content: space-between;
-  padding: 1rem;
   background-color: #ff13a7;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .body{

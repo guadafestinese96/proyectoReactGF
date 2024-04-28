@@ -4,21 +4,22 @@ ul {
     list-style: none;
     flex-wrap: wrap;
     justify-content: center;
+    
+}
 
-    li {
-        margin: 5px;
+li {
+    margin: 5px;
 
-        a {
-            font-weight: bold;
-            text-decoration: none;
-            color: #ffffff;
-            text-shadow: -2px 5px 5px #000000;
-            
-        }
-        a:hover {
-            color: black;
-            text-shadow: -2px 5px 5px #ffffff;
-            transition: .5s;
-        }
+    a{
+        font-weight: bold;
+        text-decoration: none;
+        color: #ffffff;
+        text-shadow: -2px 5px 5px #000000;
+        
+    }
+    a:hover {
+        color: black;
+        text-shadow: -2px 5px 5px #ffffff;
+        transition: .5s;
     }
 }

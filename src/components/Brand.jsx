@@ -1,7 +1,7 @@
 function Brand(){
     return(
         <div>
-            <h1>WidiStore</h1>
+            <img src="../src/assets/widiLogoRedondo.png" alt="logoWidi" className="logoWidiImg"/>
         </div>
     )
 }
