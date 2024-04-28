@@ -10,8 +10,6 @@ export default function Item({ item }) {
     console.log("cantidadaLlevar: ", cantidadaLlevar);
   };
 
-  console.log({ count, item });
-
   return (
     <div className="itemContainer">
       <div className="itemImgContainer">
@@ -19,6 +17,7 @@ export default function Item({ item }) {
       </div>
       <h2 className="itemMarca">{item.marca}</h2>
       <p className="itemNombre">{item.nombre}</p>
+      <p className="itemGenero">{item.genero}</p>
       <p className="itemPrecio">${item.precio}</p>
       <div className="contenedorContador">
         <ItemCount

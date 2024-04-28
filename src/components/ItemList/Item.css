@@ -26,12 +26,25 @@
     display: flex;
 }
 
-.itemNombre, .itemPrecio{
+.itemNombre, .itemPrecio, .itemGenero{
     justify-content: center;
+    margin: 0;
+    padding: 8px;
+    font-size: 15px;
     align-items: center;
     display: flex;
     height: 1px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.itemGenero{
+    font-size: 13px;
+}
+
+.itemPrecio{
+    color: #ff13a7;
+    font-weight: bold;
+    margin: 5px;
 }
 
 .itemImgContainer{
@@ -45,7 +58,7 @@
 }
 
 .contenedorContador {
-    margin: 5px;
+   margin: 2px;
 }
 
 .itemCartContainer{
