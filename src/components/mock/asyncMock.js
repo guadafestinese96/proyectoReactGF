@@ -37,6 +37,8 @@ export const getPerfumes = () =>{
     return new Promise((resolve)=>{
         setTimeout(()=>{
             resolve(perfumes);
+            console.log(perfumes);
         }, 2000);
     })
+    
 }
