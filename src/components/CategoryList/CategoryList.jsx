@@ -1,9 +1,11 @@
 import './CategoryList.css'
+import { NavLink } from 'react-router-dom';
+
 function CategoryList(){
     return(
         <ul>
-            <li><a href="/#">Fragancias Hombre</a></li>
-            <li><a href="/#">Fragancias Mujer</a></li>
+            <li><NavLink to={"/fraganciasHombre"}> Fragancias Hombre</NavLink></li>
+            <li><NavLink to={"/fraganciasMujer"}> Fragancias Mujer</NavLink></li>
         </ul>
     );
 }

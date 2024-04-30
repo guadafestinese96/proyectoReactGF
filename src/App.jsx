@@ -10,10 +10,11 @@ function App() {
     <Layout>
     <ItemListContainer greating="Hola WidiFollowers"/>
      <Routes>
-      <Route exact path="/" element={<h1>Home</h1>} />
-       <Route exact path="/fraganciasHombre" element={<h1>Perfumes para Hombre</h1>} />
-       <Route exact path="/fraganciasMujer" element={<h1>Perfumes para Mujer</h1>} />
-       <Route exact path="/perfumes/*" element={<h1>Not found</h1>} />
+      <Route path="/" element={<h1>Home</h1>} />
+       <Route path="/fraganciasHombre" element={<h1>Perfumes para Hombre</h1>} />
+       <Route path="/fraganciasMujer" element={<h1>Perfumes para Mujer</h1>} />
+       <Route path="/carrito" element={<h1>Carrito</h1>} />
+       <Route path="/perfumes/*" element={<h1>Not found</h1>} />
     </Routes>
     
     </Layout>
