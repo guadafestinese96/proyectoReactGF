@@ -34,6 +34,42 @@ const perfumes = [
     precio: 26000,
     stock: 5,
     image: "../src/Perfumes/blackXsLexcessH.jpg"
+},
+{
+    id: 5,
+    marca: "Paco Rabanne",
+    nombre: "Pure XS",
+    genero: "Masculino",
+    precio: 26000,
+    stock: 2,
+    image: "../src/Perfumes/pureXsH.jpg"
+},
+{
+    id: 6,
+    marca: "Paco Rabanne",
+    nombre: "Pure XS",
+    genero: "Femenino",
+    precio: 26000,
+    stock: 1,
+    image: "../src/Perfumes/pureXsM.jpg"
+},
+{
+    id: 7,
+    marca: "Paco Rabanne",
+    nombre: "Black XS",
+    genero: "Masculino",
+    precio: 26000,
+    stock: 5,
+    image: "../src/Perfumes/blackXsH.jpg"
+},
+{
+    id: 8,
+    marca: "Paco Rabanne",
+    nombre: "Black XS",
+    genero: "Femenino",
+    precio: 26000,
+    stock: 5,
+    image: "../src/Perfumes/blackXsM.jpg"
 }
 ]
 
