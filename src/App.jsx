@@ -8,7 +8,7 @@ function App() {
 
     <BrowserRouter>
     <Layout>
-    <ItemListContainer greating="Hola WidiFollowers"/>
+    <ItemListContainer greating="WIDISTOREOK"/>
      <Routes>
       <Route path="/" element={<h1>Home</h1>} />
        <Route path="/fraganciasHombre" element={<h1>Perfumes para Hombre</h1>} />
