@@ -30,7 +30,13 @@ export default function Item({ item }) {
       <div className="itemCartContainer">
         <button
           className="itemCartButton"
-          onClick={() => onAdd(item, count)}
+          onClick={() => {
+            onAdd(item, count)
+            Swal.fire({
+              title: "Agregado al carrito",
+              icon: "success",
+          })
+          }}
         >
           Agregar Al Carrito
         </button>

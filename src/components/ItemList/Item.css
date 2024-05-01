@@ -1,3 +1,4 @@
+
 .itemContainer {
     margin-top: 10px;
     width: 180px;
@@ -87,4 +88,10 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+}
+
+.swal2-popup{
+    color: #ff13a7;
+    width: 350px;
+    font-size: 12px;
 }
