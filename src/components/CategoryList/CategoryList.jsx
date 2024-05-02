@@ -1,11 +1,25 @@
 import './CategoryList.css'
 import { NavLink } from 'react-router-dom';
 
+const MIS_RUTAS=[
+    {
+        path: "/fraganciasMujer",
+        label:"MUJER",
+    },{
+        path: "/fraganciasHombre",
+        label: "HOMBRE",
+    }
+]
 function CategoryList(){
     return(
         <ul>
-            <li><NavLink className={({isActive})=> isActive ? "activeLink" : " " } to={"/fraganciasHombre"}> Fragancias Hombre</NavLink></li>
-            <li><NavLink className={({isActive})=> isActive ? "activeLink" : " " } to={"/fraganciasMujer"}> Fragancias Mujer</NavLink></li>
+            {MIS_RUTAS.map((ruta)=>(
+                <li>
+                    <NavLink className={({isActive})=> isActive ? "activeLink" : " " } to={ruta.path}> {ruta.label}</NavLink>
+                </li>
+            )
+
+            )}
         </ul>
     );
 }
