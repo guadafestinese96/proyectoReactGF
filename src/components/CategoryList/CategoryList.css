@@ -6,6 +6,7 @@ ul {
     justify-content: center;
     
 }
+/* text-shadow: -2px 5px 5px #000000; */
 
 li {
     margin: 5px;
@@ -14,12 +15,18 @@ li {
         font-weight: bold;
         text-decoration: none;
         color: #ffffff;
-        text-shadow: -2px 5px 5px #000000;
-        
+        border: 2px solid black;
+        padding: 8px;
+        border-radius: 5px;
+        background-color: black;
     }
     a:hover {
-        color: black;
-        text-shadow: -2px 5px 5px #ffffff;
+        color: #ff13a7;
         transition: .5s;
     }
+}
+
+.activeLink{
+    background-color: white;
+    color: black;
 }

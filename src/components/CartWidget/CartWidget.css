@@ -6,4 +6,8 @@
 }
 .cartIconClass:hover{
         cursor: pointer;
-    }
+        color: #ff13a7;
+}
+.cartIconClass>span:hover{
+        color: #ff13a7;
+}

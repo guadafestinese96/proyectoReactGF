@@ -4,8 +4,8 @@ import { NavLink } from 'react-router-dom';
 function CategoryList(){
     return(
         <ul>
-            <li><NavLink to={"/fraganciasHombre"}> Fragancias Hombre</NavLink></li>
-            <li><NavLink to={"/fraganciasMujer"}> Fragancias Mujer</NavLink></li>
+            <li><NavLink className={({isActive})=> isActive ? "activeLink" : " " } to={"/fraganciasHombre"}> Fragancias Hombre</NavLink></li>
+            <li><NavLink className={({isActive})=> isActive ? "activeLink" : " " } to={"/fraganciasMujer"}> Fragancias Mujer</NavLink></li>
         </ul>
     );
 }
