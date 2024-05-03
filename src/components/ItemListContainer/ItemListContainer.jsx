@@ -9,7 +9,7 @@ function ItemListContainer({ greating }) {
 
     return (
         <div className="centro">
-            <h1>{greating}</h1>
+            <h1>WIDISTOREOK</h1>
             <ItemList perfumes={perfumes} /> 
             
         </div>

@@ -1,19 +1,34 @@
-import ItemList from "../ItemList/ItemList";
-import usePerfumeGenero from "../../hooks/usePerfumeGenero";
-import { useParams } from "react-router-dom";
+import { useEffect, useState } from "react";
+import TaskList from "./TaskList"
+import FilterOptions from "./FilterOptions"
+import { getPerfumes } from "../mock/asyncMock"
+import useFilter from "./useFilter"
+import usePerfumes from "../../hooks/usePerfumes";
 
-function ItemDetailContainer() {
-    const { genero } = useParams(); // Obtener el parámetro genero de la URL
-    const { perfumesGenero, isLoading } = usePerfumeGenero(genero); // Usar el hook con el genero obtenido
+const TaskListContainer = () => {
+  const [perfumes, setPerfumes] = useState([]);
+  const { filter, setFilter, applyFilter } = useFilter();
 
-    if (isLoading) return <h1>Cargando perfumes...</h1>;
+  const perfumitos = usePerfumes();
+  console.log(perfumitos);
 
-    return (
-        <div className="centro">
-            <h1>Perfumes de {genero}</h1>
-            <ItemList perfumes={perfumesGenero} /> 
-        </div>
-    );
-}
+  useEffect(() => {
+    getPerfumes().then((data) => {
+      setPerfumes(data);
+    });
+  }, []);
 
-export default ItemDetailContainer;
+  const filteredTasks = applyFilter(perfumes);
+
+  if (!perfumes.length) return <h1>Cargando...</h1>;
+
+  return (
+    <main>
+      <h1>Perfumes de Mujer</h1>
+      <FilterOptions filter={filter} setFilter={setFilter} />
+      <TaskList tasks={filteredTasks} />
+    </main>
+  );
+};
+
+export default TaskListContainer;
