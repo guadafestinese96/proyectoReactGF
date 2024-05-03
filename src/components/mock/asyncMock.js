@@ -6,7 +6,8 @@ const perfumes = [
         precio: 26000,
         genero: "Masculino",
         stock: 8,
-        image: "../src/Perfumes/oneMillion.jpg"
+        image: "../src/Perfumes/oneMillion.jpg",
+        femenino: false,
     },
     {
         id: 2,
@@ -15,7 +16,8 @@ const perfumes = [
         precio: 26000,
         genero: "Femenino",
         stock: 2,
-        image: "../src/Perfumes/ladyMillion.jpg"
+        image: "../src/Perfumes/ladyMillion.jpg",
+        femenino: true,
     },
     {
         id: 3,
@@ -24,7 +26,8 @@ const perfumes = [
         genero: "Masculino",
         precio: 26000,
         stock: 5,
-        image: "../src/Perfumes/blackXsLexcessH.jpg"
+        image: "../src/Perfumes/blackXsLexcessH.jpg",
+        femenino: false,
     },
     {
         id: 4,
@@ -33,7 +36,8 @@ const perfumes = [
         genero: "Femenino",
         precio: 26000,
         stock: 1,
-        image: "../src/Perfumes/blackXsLexcessM.jpg"
+        image: "../src/Perfumes/blackXsLexcessM.jpg",
+        femenino: true,
     },
     {
         id: 5,
@@ -42,7 +46,8 @@ const perfumes = [
         genero: "Masculino",
         precio: 26000,
         stock: 2,
-        image: "../src/Perfumes/pureXsH.jpg"
+        image: "../src/Perfumes/pureXsH.jpg",
+        femenino: false,
     },
     {
         id: 6,
@@ -51,7 +56,8 @@ const perfumes = [
         genero: "Femenino",
         precio: 26000,
         stock: 1,
-        image: "../src/Perfumes/pureXsM.jpg"
+        image: "../src/Perfumes/pureXsM.jpg",
+        femenino: true,
     },
     {
         id: 7,
@@ -60,7 +66,8 @@ const perfumes = [
         genero: "Masculino",
         precio: 26000,
         stock: 5,
-        image: "../src/Perfumes/blackXsH.jpg"
+        image: "../src/Perfumes/blackXsH.jpg",
+        femenino: false,
     },
     {
         id: 8,
@@ -69,7 +76,8 @@ const perfumes = [
         genero: "Femenino",
         precio: 26000,
         stock: 5,
-        image: "../src/Perfumes/blackXsM.jpg"
+        image: "../src/Perfumes/blackXsM.jpg",
+        femenino: true,
     }
 ]
 

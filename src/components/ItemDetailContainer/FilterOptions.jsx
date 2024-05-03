@@ -8,8 +8,8 @@ const FilterOptions = ({ filter, setFilter }) => {
         <label htmlFor="filter">Filtrar:</label>
         <select id="filter" value={filter} onChange={handleFilterChange}>
           <option value="all">Todas</option>
-          <option value="completed">Completadas</option>
-          <option value="pending">Pendientes</option>
+          <option value="femenino">Femenino</option>
+          <option value="masculino">Masculino</option>
         </select>
       </div>
     );

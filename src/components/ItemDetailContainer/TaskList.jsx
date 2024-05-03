@@ -1,11 +1,11 @@
 const TaskList = ({tasks}) =>{
     return (
         <div> 
-        <h2>Lista de tareas </h2>
+        <h2>Lista de perfumes</h2>
         <ul>
         {tasks.map((task)=>{
             <li key= {task.id}>
-        {task.text} - {task.completed ? "Completada" : "Pendiente"}
+        {task.text} - {task.femenino ? "Femenino" : "Masculino"}
         </li>
         })}
         </ul>
