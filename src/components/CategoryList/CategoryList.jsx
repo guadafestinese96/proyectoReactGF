@@ -13,9 +13,9 @@ const MIS_RUTAS=[
 function CategoryList(){
     return(
         <ul>
-            {MIS_RUTAS.map((ruta)=>(
-                <li>
-                    <NavLink className={({isActive})=> isActive ? "activeLink" : " " } to={ruta.path}> {ruta.label}</NavLink>
+            {MIS_RUTAS.map((ruta, index)=>(
+                <li key={index}>
+                    <NavLink  className={({isActive})=> isActive ? "activeLink" : " " } to={ruta.path}> {ruta.label}</NavLink>
                 </li>
             )
 
