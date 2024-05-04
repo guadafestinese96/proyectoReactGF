@@ -8,14 +8,12 @@ const TaskList = ({ tasks }) => {
     return (
         <div>
             {/* <h2 className="titleFiltrados">PERFUMES FILTRADOS</h2> */}
-            <ul>
-                {tasks.map((task) => (
-                    // <li key={task.id}>
-                    //   {task.nombre} - {task.femenino ? "Femenino" : "Masculino"}
-                    // </li>
-                    <Item item= {task}/>
+             <ul>
+                {tasks.map((task, index) => (
+                    <Item key={index} item= {task}/> 
                 ))}
-            </ul>
+                </ul>
+           
         </div>
     );
 };

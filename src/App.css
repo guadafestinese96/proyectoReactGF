@@ -34,4 +34,5 @@ h1 {
   background-image: url(../src/assets/fotoperfumes3.jpg);
   background-size: cover;
   height: 100vh;
+  min-height: 100vh;
 }
