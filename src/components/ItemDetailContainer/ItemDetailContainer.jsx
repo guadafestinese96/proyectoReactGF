@@ -1,35 +1,16 @@
-import { useEffect, useState } from "react";
-import TaskList from "./TaskList"
-import FilterOptions from "./FilterOptions"
-import { getPerfumes } from "../mock/asyncMock"
-import useFilter from "./useFilter"
-import usePerfumes from "../../hooks/usePerfumes";
-import "./ItemDetailContainer.css"
+import usePerfume from "../../hooks/usePerfume";
+import Item from "../ItemList/Item";
 
-const TaskListContainer = () => {
-  const [perfumes, setPerfumes] = useState([]);
-  const { filter, setFilter, applyFilter } = useFilter();
+export default function ItemDetailContainer(idParams){
+    const {perfume, isLoading} = usePerfume(idParams);
 
+    if (isLoading) return <h1>Cargando...</h1>
 
-  useEffect(() => {
-    getPerfumes().then((data) => {
-      setPerfumes(data);
-    });
-  }, []);
-
-  console.log(perfumes);
-
-  const filteredTasks = applyFilter(perfumes);
-
-  if (!perfumes.length) return <h1>Cargando...</h1>;
-
-  return (
-    <main>
-      <h1 className="titleFilter">FILTRAR PERFUMES</h1>
-      <FilterOptions filter={filter} setFilter={setFilter} />
-      <TaskList tasks={filteredTasks} />
-    </main>
-  );
-};
-
-export default TaskListContainer;
+    return(
+        <div>
+            <h1>item</h1>
+            <h1>{perfume.nombre}</h1>
+           
+        </div>    
+        )
+}
