@@ -4,27 +4,28 @@ import FilterOptions from "./FilterOptions"
 import { getPerfumes } from "../mock/asyncMock"
 import useFilter from "./useFilter"
 import usePerfumes from "../../hooks/usePerfumes";
+import "./ItemDetailContainer.css"
 
 const TaskListContainer = () => {
-  const [tasks, setTasks] = useState([]);
+  const [perfumes, setPerfumes] = useState([]);
   const { filter, setFilter, applyFilter } = useFilter();
 
-  const pokemons = usePokemons();
-  console.log(pokemons);
 
   useEffect(() => {
-    getTasks().then((tasks) => {
-      setTasks(tasks);
+    getPerfumes().then((data) => {
+      setPerfumes(data);
     });
   }, []);
 
-  const filteredTasks = applyFilter(tasks);
+  console.log(perfumes);
 
-  if (!tasks.length) return <h1>Cargando...</h1>;
+  const filteredTasks = applyFilter(perfumes);
+
+  if (!perfumes.length) return <h1>Cargando...</h1>;
 
   return (
     <main>
-      <h1>Aplicación de Tareas</h1>
+      <h1 className="titleFilter">FILTRAR PERFUMES</h1>
       <FilterOptions filter={filter} setFilter={setFilter} />
       <TaskList tasks={filteredTasks} />
     </main>

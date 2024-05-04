@@ -5,11 +5,11 @@ const FilterOptions = ({ filter, setFilter }) => {
   
     return (
       <div>
-        <label htmlFor="filter">Filtrar:</label>
-        <select id="filter" value={filter} onChange={handleFilterChange}>
-          <option value="all">Todas</option>
-          <option value="femenino">Femenino</option>
-          <option value="masculino">Masculino</option>
+        <label className="labelFilter" htmlFor="filter">GENERO: </label>
+        <select className="optionFilter" id="filter" value={filter} onChange={handleFilterChange}>
+          <option className="optionFilter" value="all">Todos</option>
+          <option className="optionFilter" value="femenino">Femenino</option>
+          <option className="optionFilter" value="masculino">Masculino</option>
         </select>
       </div>
     );

@@ -3,13 +3,14 @@ import { useState } from "react";
 const useFilter = (initialFilter = "all") => {
   const [filter, setFilter] = useState(initialFilter);
 
-  const applyFilter = (tasks) => {
+  const applyFilter = (perfumes) => {
     if (filter === "all") {
-      return tasks;
+      console.log(perfumes);
+      return perfumes;
     } else if (filter === "femenino") {
-      return tasks.filter((task) => task.femenino);
+      return perfumes.filter((perfume) => perfume.femenino);
     } else if (filter === "masculino") {
-      return tasks.filter((task) => !task.femenino);
+      return perfumes.filter((perfume) => !perfume.femenino);
     }
   };
 

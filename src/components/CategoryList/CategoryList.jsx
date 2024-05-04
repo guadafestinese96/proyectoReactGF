@@ -3,6 +3,10 @@ import { NavLink } from 'react-router-dom';
 
 const MIS_RUTAS=[
     {
+        path: "/filtrar",
+        label:"Filtrar",
+    },
+    {
         path: "/fraganciasMujer",
         label:"MUJER",
     },{
