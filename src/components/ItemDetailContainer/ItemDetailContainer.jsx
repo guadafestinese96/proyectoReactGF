@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 
 
 export default function ItemDetailContainer(){
+
     const {idParams} = useParams();
     const {perfume, isLoading} = usePerfume(idParams);
 
