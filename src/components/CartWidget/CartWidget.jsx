@@ -7,7 +7,7 @@ function CartWidget() {
 
     const [cartItems, setCartItems] = useState(3);
     return (
-        <NavLink to={"/carrito"}>
+        <NavLink to={"/seccion/carrito"}>
         <div className="cartIconClass">
             <CartIcon ancho={30} alto={40} />
             <span>{cartItems}</span>

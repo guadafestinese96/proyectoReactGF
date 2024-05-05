@@ -14,12 +14,12 @@ function App() {
     {/* <ItemListContainer greating="WIDISTOREOK"/> */}
      <Routes>
       <Route path="/" element={<ItemListContainer/>}/>         
-      <Route path="/filtrar/:id" element={<FilterContainer/>}/> 
-      <Route path="/filtrar" element={<FilterContainer/>} />   
+      <Route path="/seccion/:id" element={<ItemListContainer/>}/> 
+      <Route path="/seccion/filtrar" element={<FilterContainer/>} />   
       <Route path="/item/:id" element={<ItemDetailContainer/>} />      
-       <Route path="/marcas" element={<h1>MARCAS</h1>} />
-       <Route path="/carrito" element={<h1>CARRITO</h1>} />
-       <Route path="/perfumes/*" element={<h1>NOT FOUND</h1>} />
+       <Route path="/seccion/marcas" element={<h1>MARCAS</h1>} />
+       <Route path="/seccion/carrito" element={<h1>CARRITO</h1>} />
+       <Route path="/secciones/*" element={<h1>NOT FOUND</h1>} />
     </Routes>
     
     </Layout>

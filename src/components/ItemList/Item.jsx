@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import useCount from "../../hooks/useCount";
 import ItemCount from "../ItemCount/ItemCount";
 import "./Item.css";
@@ -13,7 +14,7 @@ export default function Item({ item }) {
   return (
     <div className="itemContainer">
       <div className="itemImgContainer">
-        <img className="itemImg" src={item.image} alt={item.nombre} />
+        <img className="itemImg" src={`../src/Perfumes/${item.image}`} alt={item.nombre} />
       </div>
       <h2 className="itemMarca">{item.marca}</h2>
       <p className="itemNombre">{item.nombre}</p>

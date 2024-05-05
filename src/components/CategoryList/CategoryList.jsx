@@ -3,11 +3,11 @@ import { NavLink } from 'react-router-dom';
 
 const MIS_RUTAS=[
     {
-        path: "/filtrar",
+        path: "/seccion/filtrar",
         label:"FILTRAR",
     },
     {
-        path: "/marcas",
+        path: "/seccion/marcas",
         label:"MARCAS",
     }
 ]

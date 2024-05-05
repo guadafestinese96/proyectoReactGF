@@ -6,7 +6,7 @@ const perfumes = [
         precio: 26000,
         genero: "Masculino",
         stock: 8,
-        image: "../src/Perfumes/oneMillion.jpg",
+        image: "oneMillion.jpg",
         femenino: false,
     },
     {
@@ -16,7 +16,7 @@ const perfumes = [
         precio: 26000,
         genero: "Femenino",
         stock: 2,
-        image: "../src/Perfumes/ladyMillion.jpg",
+        image: "ladyMillion.jpg",
         femenino: true,
     },
     {
@@ -26,7 +26,7 @@ const perfumes = [
         genero: "Masculino",
         precio: 26000,
         stock: 5,
-        image: "../src/Perfumes/blackXsLexcessH.jpg",
+        image: "blackXsLexcessH.jpg",
         femenino: false,
     },
     {
@@ -36,7 +36,7 @@ const perfumes = [
         genero: "Femenino",
         precio: 26000,
         stock: 1,
-        image: "../src/Perfumes/blackXsLexcessM.jpg",
+        image: "blackXsLexcessM.jpg",
         femenino: true,
     },
     {
@@ -46,7 +46,7 @@ const perfumes = [
         genero: "Masculino",
         precio: 26000,
         stock: 2,
-        image: "../src/Perfumes/pureXsH.jpg",
+        image: "pureXsH.jpg",
         femenino: false,
     },
     {
@@ -56,7 +56,7 @@ const perfumes = [
         genero: "Femenino",
         precio: 26000,
         stock: 1,
-        image: "../src/Perfumes/pureXsM.jpg",
+        image: "pureXsM.jpg",
         femenino: true,
     },
     {
@@ -66,7 +66,7 @@ const perfumes = [
         genero: "Masculino",
         precio: 26000,
         stock: 5,
-        image: "../src/Perfumes/blackXsH.jpg",
+        image: "blackXsH.jpg",
         femenino: false,
     },
     {
@@ -76,7 +76,7 @@ const perfumes = [
         genero: "Femenino",
         precio: 26000,
         stock: 5,
-        image: "../src/Perfumes/blackXsM.jpg",
+        image: "blackXsM.jpg",
         femenino: true,
     },
     {
@@ -86,7 +86,7 @@ const perfumes = [
         genero: "Masculino",
         precio: 26000,
         stock: 5,
-        image: "../src/Perfumes/invictus.jpg",
+        image: "invictus.jpg",
         femenino: false,
     },
     {
@@ -96,7 +96,7 @@ const perfumes = [
         genero: "Femenino",
         precio: 26000,
         stock: 5,
-        image: "../src/Perfumes/olympea.jpg",
+        image: "olympea.jpg",
         femenino: true,
     },
     {
@@ -106,7 +106,7 @@ const perfumes = [
         genero: "Masculino",
         precio: 26000,
         stock: 5,
-        image: "../src/Perfumes/fht.jpg",
+        image: "fht.jpg",
         femenino: false,
     },
     {
@@ -116,7 +116,7 @@ const perfumes = [
         genero: "Femenino",
         precio: 26000,
         stock: 5,
-        image: "../src/Perfumes/jadore.jpg",
+        image: "jadore.jpg",
         femenino: true,
     },
     {
@@ -126,7 +126,7 @@ const perfumes = [
         genero: "Masculino",
         precio: 26000,
         stock: 5,
-        image: "../src/Perfumes/sauvage.jpg",
+        image: "sauvage.jpg",
         femenino: false,
     },
     {
@@ -136,7 +136,7 @@ const perfumes = [
         genero: "Femenino",
         precio: 26000,
         stock: 5,
-        image: "../src/Perfumes/missDior.jpg",
+        image: "missDior.jpg",
         femenino: true,
     },
 ]
