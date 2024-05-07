@@ -1,3 +1,4 @@
+import React from "react";
 import usePerfume from "../../hooks/usePerfume";
 import Item from "../ItemList/Item";
 import { useParams } from "react-router-dom";
@@ -5,11 +6,12 @@ import { useParams } from "react-router-dom";
 
 export default function ItemDetailContainer(){
 
-    const {idParams} = useParams();
-    const {perfume, isLoading} = usePerfume(idParams);
+    const {id} = useParams();
+    const {perfume, isLoading} = usePerfume(parseInt(id));
 
     if (isLoading) return <h1>Cargando...</h1>
-
+    console.log(id);
+   
 
     if(!perfume){
         return <h1>ID DE PERFUME INEXISTENTE</h1>

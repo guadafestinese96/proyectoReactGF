@@ -2,9 +2,9 @@ import ItemList from "../ItemList/ItemList";
 import "./ItemListContainer.css"
 import usePerfumes from "../../hooks/usePerfumes";
 
-function ItemListContainer({ greating }) {
+function ItemListContainer() {
     const {perfumes, isLoading} = usePerfumes();
-
+    
      if (isLoading) return <h1>Cargando...</h1>
 
     return (
