@@ -2,6 +2,7 @@ import React from "react";
 import usePerfume from "../../hooks/usePerfume";
 import Item from "../ItemList/Item";
 import { useParams } from "react-router-dom";
+import "./ItemDetailContainer.css"
 
 
 export default function ItemDetailContainer(){
@@ -17,8 +18,8 @@ export default function ItemDetailContainer(){
         return <h1>ID DE PERFUME INEXISTENTE</h1>
     }else{
         return(
-        <div>
-            <h1>item</h1>
+        <div className="perfumeEncontrado">
+            <h1>PERFUME ENCONTRADO</h1>
             <Item item={perfume}/>
         </div>    
     )
