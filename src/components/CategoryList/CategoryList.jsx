@@ -7,8 +7,12 @@ const MIS_RUTAS=[
         label:"FILTRAR",
     },
     {
-        path: "/seccion/marcas",
-        label:"MARCAS",
+        path: "/seccion/marcas/pacorabanne",
+        label:"PACO RABANNE",
+    },
+    {
+        path: "/seccion/marcas/dior",
+        label:"DIOR",
     }
 ]
 function CategoryList(){

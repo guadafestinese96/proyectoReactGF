@@ -10,7 +10,9 @@ export default function usePerfumes(idMarca) {
     useEffect(() => {
         setIsLoading(true);
         if(idMarca){
-            getPerfumesPorMarca(idMarca).then((data)=>setPerfumes(data)).finally(()=> setIsLoading(false))
+            getPerfumesPorMarca(idMarca)
+            .then((data)=>setPerfumes(data))
+            .finally(()=> setIsLoading(false))
         }else{
         getPerfumes()
             .then((data) => setPerfumes(data))
