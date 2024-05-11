@@ -1,9 +1,12 @@
 import ItemList from "../ItemList/ItemList";
 import "./ItemListContainer.css"
 import usePerfumes from "../../hooks/usePerfumes";
+import { useParams } from "react-router-dom";
+
 
 function ItemListContainer() {
-    const {perfumes, isLoading} = usePerfumes();
+    const {marca} = useParams();
+    const {perfumes, isLoading} = usePerfumes(marca);
     
      if (isLoading) return <h1>Cargando...</h1>
 

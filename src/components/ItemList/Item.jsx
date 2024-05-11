@@ -13,9 +13,11 @@ export default function Item({ item }) {
 
   return (
     <div className="itemContainer">
+      <NavLink to={`/item/${item.id}`}>
       <div className="itemImgContainer">
         <img className="itemImg" src={`../src/Perfumes/${item.image}`} alt={item.nombre} />
       </div>
+      </NavLink>
       <h2 className="itemMarca">{item.marca}</h2>
       <p className="itemNombre">{item.nombre}</p>
       <p className="itemGenero">{item.genero}</p>

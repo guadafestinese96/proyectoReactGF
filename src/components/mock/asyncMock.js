@@ -2,6 +2,7 @@ const perfumes = [
     {
         id: 1,
         marca: "Paco Rabanne",
+        idMarca: "pacorabanne",
         nombre: "One Million",
         precio: 26000,
         genero: "Masculino",
@@ -12,6 +13,7 @@ const perfumes = [
     {
         id: 2,
         marca: "Paco Rabanne",
+        idMarca: "pacorabanne",
         nombre: "Lady Million",
         precio: 26000,
         genero: "Femenino",
@@ -22,6 +24,7 @@ const perfumes = [
     {
         id: 3,
         marca: "Paco Rabanne",
+        idMarca: "pacorabanne",
         nombre: "Black XS L'excess",
         genero: "Masculino",
         precio: 26000,
@@ -32,6 +35,7 @@ const perfumes = [
     {
         id: 4,
         marca: "Paco Rabanne",
+        idMarca: "pacorabanne",
         nombre: "Black XS L'Excess",
         genero: "Femenino",
         precio: 26000,
@@ -42,6 +46,7 @@ const perfumes = [
     {
         id: 5,
         marca: "Paco Rabanne",
+        idMarca: "pacorabanne",
         nombre: "Pure XS",
         genero: "Masculino",
         precio: 26000,
@@ -52,6 +57,7 @@ const perfumes = [
     {
         id: 6,
         marca: "Paco Rabanne",
+        idMarca: "pacorabanne",
         nombre: "Pure XS",
         genero: "Femenino",
         precio: 26000,
@@ -62,6 +68,7 @@ const perfumes = [
     {
         id: 7,
         marca: "Paco Rabanne",
+        idMarca: "pacorabanne",
         nombre: "Black XS",
         genero: "Masculino",
         precio: 26000,
@@ -72,6 +79,7 @@ const perfumes = [
     {
         id: 8,
         marca: "Paco Rabanne",
+        idMarca: "pacorabanne",
         nombre: "Black XS",
         genero: "Femenino",
         precio: 26000,
@@ -82,6 +90,7 @@ const perfumes = [
     {
         id: 9,
         marca: "Paco Rabanne",
+        idMarca: "pacorabanne",
         nombre: "Invictus",
         genero: "Masculino",
         precio: 26000,
@@ -92,6 +101,7 @@ const perfumes = [
     {
         id: 10,
         marca: "Paco Rabanne",
+        idMarca: "pacorabanne",
         nombre: "Olympea",
         genero: "Femenino",
         precio: 26000,
@@ -102,6 +112,7 @@ const perfumes = [
     {
         id: 11,
         marca: "Dior",
+        idMarca: "dior",
         nombre: "Farenheit",
         genero: "Masculino",
         precio: 26000,
@@ -112,6 +123,7 @@ const perfumes = [
     {
         id: 12,
         marca: "Dior",
+        idMarca: "dior",
         nombre: "Jadore",
         genero: "Femenino",
         precio: 26000,
@@ -122,6 +134,7 @@ const perfumes = [
     {
         id: 13,
         marca: "Dior",
+        idMarca: "dior",
         nombre: "Sauvage",
         genero: "Masculino",
         precio: 26000,
@@ -132,6 +145,7 @@ const perfumes = [
     {
         id: 14,
         marca: "Dior",
+        idMarca: "dior",
         nombre: "Miss Dior",
         genero: "Femenino",
         precio: 26000,
@@ -164,5 +178,14 @@ export const getPerfumesByGenero = (genero) =>{
         setTimeout(()=>{
             resolve(perfumes.filter((perfume)=> perfume.genero === genero))
         }, 2000);
+    })
+}
+
+export const getPerfumesPorMarca = (idMarca)=>{
+    return new Promise((resolve)=>{
+        setTimeout(()=>{
+            resolve(perfumes.filter((perfume)=>
+            perfume.idMarca === idMarca))
+        }, 500)
     })
 }

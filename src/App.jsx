@@ -18,6 +18,7 @@ function App() {
       <Route path="/seccion/filtrar" element={<FilterContainer/>} />   
       <Route path="/item/:id" element={<ItemDetailContainer/>} />      
        <Route path="/seccion/marcas" element={<h1>MARCAS</h1>} />
+       <Route path="/seccion/marcas/:idMarca" element={<ItemListContainer/>} />
        <Route path="/seccion/carrito" element={<h1>CARRITO</h1>} />
        <Route path="/secciones/*" element={<h1>NOT FOUND</h1>} />
     </Routes>
