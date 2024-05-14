@@ -5,3 +5,32 @@
     align-items: center;
     flex-wrap: wrap;
 }
+
+.contenedorVapes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.itemVapeContainer {
+    margin-top: 10px;
+    width: 180px;
+    height: 400px;
+    border: 1px solid #777;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    background-color: white;
+    padding-bottom: 15px;
+    padding-top: 0;
+}
+
+.itemImgVape {
+    height: 200px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
