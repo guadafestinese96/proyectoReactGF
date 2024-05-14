@@ -8,7 +8,8 @@ import { useContext } from "react";
 
 export default function Item({ item }) {
   const { count, increment, decrement } = useCount(0);
-  const { addToCart } = useContext(CartContext) ;
+  /*
+  const {addToCart} = useContext(CartContext);
 
   const handleAddToCart= ()=>{
     Swal.fire({
@@ -19,17 +20,21 @@ export default function Item({ item }) {
     
     reset();
   }
-
+*/
   const onAdd = (nombreDeItem, cantidadaLlevar) => {
     console.log("nombreDeItem: ", nombreDeItem);
     console.log("cantidadaLlevar: ", cantidadaLlevar);
+    Swal.fire({
+      title: "Agregado al carrito",
+      icon: "success",
+    })
   };
 
   return (
     <div className="itemContainer">
       <NavLink to={`/item/${item.id}`}>
       <div className="itemImgContainer">
-        <img className="itemImg" src={`../src/Perfumes/${item.image}`} alt={item.nombre} />
+        <img className="itemImg" src={`../../src/Perfumes/${item.image}`} alt={item.nombre} />
       </div>
       </NavLink>
       <h2 className="itemMarca">{item.marca}</h2>
@@ -54,7 +59,7 @@ export default function Item({ item }) {
           //     icon: "success",
           // })
           // }}
-          onClick={handleAddToCart} disabled={count === 0} 
+          onClick={onAdd} disabled={count === 0} 
         >
           Agregar Al Carrito
         </button>

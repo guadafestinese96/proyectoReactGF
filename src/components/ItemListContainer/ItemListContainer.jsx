@@ -5,8 +5,8 @@ import { useParams } from "react-router-dom";
 
 
 function ItemListContainer() {
-    const {marca} = useParams();
-    const {perfumes, isLoading} = usePerfumes(marca);
+    const {idMarca} = useParams();
+    const {perfumes, isLoading} = usePerfumes(idMarca);
     
      if (isLoading) return <h1>Cargando...</h1>
 

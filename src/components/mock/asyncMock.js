@@ -128,7 +128,7 @@ const perfumes = [
         genero: "Femenino",
         precio: 26000,
         stock: 5,
-        image: "jadore.jpg",
+        image: "jadore2.jpg",
         femenino: true,
     },
     {

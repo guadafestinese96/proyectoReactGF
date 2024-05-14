@@ -4,7 +4,7 @@ function Brand(){
     return(
         <div>
             <NavLink to={"/"}>
-            <img src="../src/assets/widiLogoRedondo.png" alt="logoWidi" className="logoWidiImg"/>
+            <img src="../../src/assets/widiLogoRedondo.png" alt="logoWidi" className="logoWidiImg"/>
             </NavLink>
         </div>
     )
