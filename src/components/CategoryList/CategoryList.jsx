@@ -13,6 +13,10 @@ const MIS_RUTAS=[
     {
         path: "/seccion/marcas/dior",
         label:"DIOR",
+    },
+    {
+        path: "/seccion/vapes",
+        label:"VAPES",
     }
 ]
 function CategoryList(){
