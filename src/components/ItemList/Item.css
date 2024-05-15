@@ -66,7 +66,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 5px;
+    height: 30px;
 }
 
 .itemCartButton {
@@ -100,7 +100,8 @@
 
 .disponibles{
     font-size: 11px;
-    padding-top: 40px;
+    padding-top: 15px;
+    
 }
 
 
