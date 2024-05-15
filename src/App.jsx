@@ -5,6 +5,8 @@ import Layout from './components/Layout/Layout'
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import FilterContainer from "./components/FilterContainer/FilterContainer"
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer'
+import CartContext from './components/contexts/CartContext/CartContext'
+import CartProvider from './components/contexts/CartContext/CartProvider'
 
 
 function App() {

@@ -8,15 +8,15 @@ import { useContext } from "react";
 
 export default function Item({ item }) {
   const { count, increment, decrement } = useCount(0);
-  /*
-  const {addToCart} = useContext(CartContext);
+  
+  /*const {addToCart} = useContext(CartContext);
 
   const handleAddToCart= ()=>{
     Swal.fire({
       title: "Agregado al carrito",
       icon: "success",
     })
-    addToCart(item, count);
+    console.log(addToCart(item, count));
     
     reset();
   }
