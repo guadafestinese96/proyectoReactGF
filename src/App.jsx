@@ -13,6 +13,7 @@ function App() {
   return (
    
     <BrowserRouter> 
+    <CartProvider>
     <Layout>
     {/* <ItemListContainer greating="WIDISTOREOK"/> */}
      <Routes>
@@ -27,6 +28,7 @@ function App() {
     </Routes>
     
     </Layout>
+    </CartProvider>
     </BrowserRouter>
   )
 }

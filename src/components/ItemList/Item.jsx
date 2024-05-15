@@ -7,24 +7,26 @@ import { useContext } from "react";
 
 
 export default function Item({ item }) {
-  const { count, increment, decrement } = useCount(0);
+  const { count, increment, decrement, reset } = useCount(0);
   
-  /*const {addToCart} = useContext(CartContext);
+  const {addToCart} = useContext(CartContext);
 
-  const handleAddToCart= ()=>{
-    Swal.fire({
-      title: "Agregado al carrito",
-      icon: "success",
-    })
-    console.log(addToCart(item, count));
-    
-    reset();
-  }
-*/
   const onAdd = (nombreDeItem, cantidadaLlevar) => {
     console.log("nombreDeItem: ", nombreDeItem);
     console.log("cantidadaLlevar: ", cantidadaLlevar);
   };
+
+  const handleAddToCart= ()=>{
+    onAdd(item,count)
+    Swal.fire({
+      title: "Agregado al carrito",
+      icon: "success",
+    })
+    addToCart(item, count);
+    reset();
+  }
+
+
 
   return (
     <div className="itemContainer">
@@ -49,7 +51,7 @@ export default function Item({ item }) {
         <button
           className="itemCartButton"
            onClick={() => {
-             onAdd(item, count)
+             handleAddToCart()
              Swal.fire({
                title: "Agregado al carrito",
                icon: "success",
