@@ -1,7 +1,6 @@
 import ItemListVape from "./ItemListVape"
 import "./ItemListVapeContainer.css"
 import useVapes from "../hooks/useVapes";
-import { useParams } from "react-router-dom";
 
 
 export default function ItemListVapeContainer() {
@@ -11,7 +10,7 @@ export default function ItemListVapeContainer() {
 
     return (
         <div className="centro">
-            <h1>WIDISTOREOK</h1>
+            <h1>VAPES</h1>
             <ItemListVape vapes={vapes} /> 
             
         </div>

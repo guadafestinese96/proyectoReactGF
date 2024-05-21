@@ -1,6 +1,6 @@
 const vapes = [
     {
-        id: 1,
+        idVape: 1,
         marca: "Elfbar",
         idMarca: "elfbar",
         nombre: "Blackberry Cranberry",
@@ -9,7 +9,7 @@ const vapes = [
         image: "cranberry.png",
     },
     {
-        id: 2,
+        idVape: 2,
         marca: "Elfbar",
         idMarca: "elfbar",
         nombre: "Strawberry Ice",
@@ -18,7 +18,7 @@ const vapes = [
         image: "strawberryIce.png",
     }
     ,{
-        id: 3,
+        idVape: 3,
         marca: "Elfbar",
         idMarca: "elfbar",
         nombre: "Strawberry Banana",
@@ -27,7 +27,7 @@ const vapes = [
         image: "strawberryBanana.png",
     }
     ,{
-        id: 4,
+        idVape: 4,
         marca: "Elfbar",
         idMarca: "elfbar",
         nombre: "Red Berry Cherry",

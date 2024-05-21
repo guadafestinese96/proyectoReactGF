@@ -14,11 +14,9 @@ export default function ItemVape({ item }) {
 
   return (
     <div className="itemVapeContainer">
-      <NavLink to={`/item/${item.id}`}>
       <div className="itemImgContainer">
         <img className="itemImgVape" src={`../../src/Vapes/${item.image}`} alt={item.nombre} />
       </div>
-      </NavLink>
       <h2 className="itemMarca">{item.marca}</h2>
       <p className="itemNombre">{item.nombre}</p>
       <p className="itemPrecio">${item.precio}</p>
