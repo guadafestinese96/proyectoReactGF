@@ -5,8 +5,8 @@ import Layout from './components/Layout/Layout'
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import FilterContainer from "./components/FilterContainer/FilterContainer"
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer'
-import CartContext from './components/contexts/CartContext/CartContext'
 import CartProvider from './components/contexts/CartContext/CartProvider'
+import CartContainer from './components/CartContainer/CartContainer'
 
 
 function App() {
@@ -23,7 +23,7 @@ function App() {
       <Route path="/item/:id" element={<ItemDetailContainer/>} />      
       <Route path="/seccion/marcas/:idMarca" element={<ItemListContainer/>} />
       <Route path="/seccion/vapes" element={<ItemListVapeContainer />} />
-      <Route path="/seccion/carrito" element={<h1>CARRITO</h1>} />
+      <Route path="/seccion/carrito" element={<CartContainer/>} />
       <Route path="/secciones/*" element={<h1>NOT FOUND</h1>} />
     </Routes>
     

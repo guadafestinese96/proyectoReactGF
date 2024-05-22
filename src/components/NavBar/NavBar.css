@@ -11,7 +11,7 @@
     border-radius: 100%;
   }
 
-  @media screen and (min-width: 501px) and (max-width: 670px) {
+  @media screen and (min-width: 300px) and (max-width: 670px) {
     .navBarClass{
     ul{
       display: flex;
@@ -26,6 +26,10 @@
           padding: 8px;
           background-color: #ff13a7;
           border: none;
+      }
+
+      a:hover{
+        color: white;
       }
     }
     }

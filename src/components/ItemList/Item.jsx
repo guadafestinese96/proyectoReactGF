@@ -9,7 +9,7 @@ import { useContext } from "react";
 export default function Item({ item }) {
   const { count, increment, decrement, reset } = useCount(0);
   
-  const {addToCart} = useContext(CartContext);
+  const {addToCart, cart} = useContext(CartContext);
 
   const onAdd = (nombreDeItem, cantidadaLlevar) => {
     console.log("nombreDeItem: ", nombreDeItem);
