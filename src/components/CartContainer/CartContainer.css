@@ -1,0 +1,14 @@
+.clearCart{
+    background-color: #ff13a7;
+    color: black;
+    padding: 5px;
+    font-weight: bolder;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+
+.clearCart:hover{
+    cursor: pointer;
+    background-color: white;
+}

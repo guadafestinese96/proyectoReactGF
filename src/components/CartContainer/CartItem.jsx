@@ -7,20 +7,23 @@ export default function CartItem({item}){
 
     return(
         <div key={item} className="itemCart">
-            <img className="itemImg" src={`../../src/Perfumes/${item.product.image}`} alt={item.nombre} />
+            <img className="itemImgCart" src={`../../src/Perfumes/${item.product.image}`} alt={item.nombre} />
             <div className="detalleItem">
-            <p>{item.product.nombre}</p>
-            <p>Cantidad: {item.quantity}</p>
+            <p className="fraganceName">{item.product.nombre}</p>
+            <p>{item.product.genero}</p>
             <p>Precio: {item.product.precio}</p>
+            <p>Cantidad: {item.quantity}</p>
             <button className="buttonRemove" onClick={() => removeFromCart(item.product.id, 1)}>
                 -
             </button>
+            
             <button
           className="buttonAdd"
           onClick={() => addToCart(item.product, 1)}
         >
           +
         </button>
+        
         </div>
             
         </div>

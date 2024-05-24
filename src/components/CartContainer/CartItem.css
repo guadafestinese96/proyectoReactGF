@@ -1,4 +1,31 @@
 .itemCart{
     background-color: white;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid black;
+    border-radius: 10px;
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    height: 10px;
+}
+
+.fraganceName{
+    font-size: 20px;
+}
+
+.itemImgCart{
+    width: 150px;
+    height: 150px;
+}
+
+.buttonRemove, .buttonAdd{
+    background-color: #ff13a7;
+    border: 1px solid black;
+    margin: 2px;
+    border-radius: 2px;
 }

@@ -48,7 +48,7 @@ export default function CartProvider({ children }) {
 
   const cartTotal = cart
     .reduce((acc, item) => {
-      return acc + item.product.price * item.quantity;
+      return acc + item.product.precio * item.quantity;
     }, 0)
     .toFixed(2);
 
