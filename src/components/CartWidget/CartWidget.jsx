@@ -7,7 +7,7 @@ import CartContext from "../contexts/CartContext/CartContext";
 function CartWidget() {
 
     const {cart} = useContext(CartContext);
-    const cantidadCarrito = cart.reduce((acc,item) => acc + item.quanqtity, 0);
+    const cantidadCarrito = cart.reduce((acc,item) => acc + item.quantity, 0);
     
     return (
         <NavLink to={"/seccion/carrito"}>

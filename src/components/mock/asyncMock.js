@@ -160,7 +160,7 @@ export const getPerfumes = () => {
         setTimeout(() => {
             resolve(perfumes);
             //console.log(perfumes);
-        }, 2000);
+        }, 1000);
     })
 
 }
@@ -169,7 +169,7 @@ export const getPerfumesById = (id) =>{
     return new Promise((resolve) =>{
         setTimeout(()=>{
             resolve(perfumes.find((perfume)=> perfume.id === id))
-        }, 2000);
+        }, 1000);
     })
 }
 
@@ -177,7 +177,7 @@ export const getPerfumesByGenero = (genero) =>{
     return new Promise((resolve)=>{
         setTimeout(()=>{
             resolve(perfumes.filter((perfume)=> perfume.genero === genero))
-        }, 2000);
+        }, 1000);
     })
 }
 

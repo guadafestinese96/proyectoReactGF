@@ -6,19 +6,21 @@ import "./CartContainer.css"
 export default function CartContainer(){
     
     const {cart, clearCart, cartTotal} = useContext(CartContext);
-    
+    console.log(cart.length);
     return(
         <div className="cartContainer">
             <h1>CARRITO</h1>
-            {cart.lenght === 0 ? (
-            <h2>No hay productos en el carrito</h2>
+            {cart.length === 0 ? (
+            <h2 className="clearCartText">Aún no hay productos en el carrito</h2>
             ):(
                 cart.map((item)=>{
                 return <CartItem key={item.product.id} item={item} />;
             }))
             }
+            <div className={`${cart.length === 0 ? "hidden" : ""}`}>
             <h3>Total $ {cartTotal}</h3>
             <button className="clearCart" onClick={clearCart}>Limpiar Carrito</button>
+        </div>
         </div>
     )
 }

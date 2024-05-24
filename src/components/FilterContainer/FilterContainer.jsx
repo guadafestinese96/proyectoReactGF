@@ -3,7 +3,6 @@ import TaskList from "./TaskList"
 import FilterOptions from "./FilterOptions"
 import { getPerfumes } from "../mock/asyncMock"
 import useFilter from "./useFilter"
-import usePerfumes from "../../hooks/usePerfumes";
 import "./FilterContainer.css"
 
 const TaskListContainer = () => {
