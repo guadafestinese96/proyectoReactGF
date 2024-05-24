@@ -1,6 +1,6 @@
 import React from "react";
 import usePerfume from "../../hooks/usePerfume";
-import Item from "../ItemList/Item";
+import ItemDetail from "../ItemDetail/ItemDetail";
 import { useParams } from "react-router-dom";
 import "./ItemDetailContainer.css"
 
@@ -20,7 +20,7 @@ export default function ItemDetailContainer(){
         return(
         <div className="perfumeEncontrado">
             <h1>PERFUME ENCONTRADO</h1>
-            <Item item={perfume}/>
+            <ItemDetail item={perfume}/>
         </div>    
     )
     }
