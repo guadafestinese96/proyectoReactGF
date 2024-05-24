@@ -9,30 +9,28 @@ import CartProvider from './components/contexts/CartContext/CartProvider'
 import CartContainer from './components/CartContainer/CartContainer'
 import { useEffect } from 'react'
 import { getFirestore, collection, getDocs } from 'firebase/firestore'
-
+import { useState } from 'react'
 
 function App() {
 
+  const[perfumes, setPerfumes] = useState([]);
+  useEffect(()=>{
+    const db = getFirestore();
+    const productCollection = collection(db, "perfumes");
+    getDocs(productCollection).then((snapshot)=>{
+      setPerfumes(snapshot.docs.map((doc)=> doc.data()))
+    })
+  },[])
+  
   return (
-   
-    <BrowserRouter> 
-    <CartProvider>
-    <Layout>
-    {/* <ItemListContainer greating="WIDISTOREOK"/> */}
-     <Routes>
-      <Route path="/" element={<ItemListContainer/>}/>         
-      <Route path="/seccion/:id" element={<ItemListContainer/>}/> 
-      <Route path="/seccion/filtrar" element={<FilterContainer/>} />   
-      <Route path="/item/:id" element={<ItemDetailContainer/>} />      
-      <Route path="/seccion/marcas/:idMarca" element={<ItemListContainer/>} />
-      <Route path="/seccion/vapes" element={<ItemListVapeContainer />} />
-      <Route path="/seccion/carrito" element={<CartContainer/>} />
-      <Route path="/secciones/*" element={<h1>NOT FOUND</h1>} />
-    </Routes>
+   perfumes.map((perfume)=>(
+    <div key={perfume.id}>
+      <h2>{perfume.nombre}</h2>
+      <p>{perfume.precio}</p>
+      <img style={{width:"150px"}} src={perfume.image} alt={perfume.nombre}></img>
+    </div>
+   ))
     
-    </Layout>
-    </CartProvider>
-    </BrowserRouter>
   )
 }
 
@@ -40,5 +38,4 @@ export default App;
 
 
 
-    
     
