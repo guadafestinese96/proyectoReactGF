@@ -10,9 +10,9 @@ export default function CartItem({item}){
             <img className="itemImgCart" src={`../../src/Perfumes/${item.product.image}`} alt={item.nombre} />
             <div className="detalleItem">
             <p className="fraganceName">{item.product.nombre}</p>
-            <p>{item.product.genero}</p>
-            <p>Precio: {item.product.precio}</p>
-            <p>Cantidad: {item.quantity}</p>
+            <p className="fraganceDetail">{item.product.genero}</p>
+            <p className="fraganceDetail">Precio: {item.product.precio}</p>
+            <p className="fraganceDetail">Cantidad: {item.quantity}</p>
             <button className="buttonRemove" onClick={() => removeFromCart(item.product.id, 1)}>
                 -
             </button>
@@ -20,7 +20,7 @@ export default function CartItem({item}){
             <button
           className="buttonAdd"
           onClick={() => addToCart(item.product, 1)}
-        >
+        disabled={item.quantity === item.product.stock}>
           +
         </button>
         

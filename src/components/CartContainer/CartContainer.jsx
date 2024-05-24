@@ -8,7 +8,7 @@ export default function CartContainer(){
     const {cart, clearCart, cartTotal} = useContext(CartContext);
     
     return(
-        <div>
+        <div className="cartContainer">
             <h1>CARRITO</h1>
             {cart.lenght === 0 ? (
             <h2>No hay productos en el carrito</h2>
