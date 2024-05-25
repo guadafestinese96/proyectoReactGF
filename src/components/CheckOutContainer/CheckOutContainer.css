@@ -1,0 +1,45 @@
+.comprar{
+    width: 150px;
+    font-size: 20px;
+}
+
+.checkoutContainer{
+    margin: 10px;
+}
+
+.formCompra{
+    background-color: gainsboro;
+    padding: 10px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.datosForm{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.labelForm{
+    padding: 5px;
+    width: 200px;
+}
+
+.inputsDatos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 400px;
+}
+
+.inputNombre, .inputApellido, .inputEmail{
+    width: 250px;
+    padding: 5px;
+    margin: 5px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}

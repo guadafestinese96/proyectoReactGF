@@ -29,6 +29,7 @@
 
 .itemNombre, .itemPrecio, .itemGenero{
     justify-content: center;
+    text-transform: capitalize;
     margin: 0;
     padding: 8px;
     font-size: 15px;
@@ -40,6 +41,7 @@
 
 .itemGenero{
     font-size: 13px;
+    margin-top: 10px;
 }
 
 .itemPrecio{

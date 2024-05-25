@@ -2,6 +2,7 @@ import { useContext } from "react"
 import CartContext from "../contexts/CartContext/CartContext"
 import CartItem from "./CartItem";
 import "./CartContainer.css"
+import { NavLink } from "react-router-dom";
 
 export default function CartContainer(){
     
@@ -20,7 +21,10 @@ export default function CartContainer(){
             <div className={`${cart.length === 0 ? "hidden" : ""}`}>
             <h3>Total $ {cartTotal}</h3>
             <button className="clearCart" onClick={clearCart}>Limpiar Carrito</button>
-        </div>
+            <NavLink to="/seccion/checkout">
+            <button className="clearCart" >Terminar Compra</button>
+            </NavLink>
+            </div>
         </div>
     )
 }

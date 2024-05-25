@@ -13,6 +13,9 @@ const MIS_RUTAS=[
     {
         path: "/seccion/marcas/dior",
         label:"DIOR",
+    },{
+        path: "/seccion/marcas/armani",
+        label:"ARMANI",
     },
     {
         path: "/seccion/vapes",

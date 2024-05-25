@@ -19,6 +19,7 @@ export default function CartProvider({ children }) {
       setCart(updatedCart);
     } else {
       setCart([...cart, { product, quantity }]);
+
     }
   };
 

@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { getPerfumesById } from "../components/mock/asyncMock";
-import { useParams } from "react-router-dom";
 
 
 export default function usePerfume(id) {

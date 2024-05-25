@@ -7,8 +7,7 @@ import FilterContainer from "./components/FilterContainer/FilterContainer"
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer'
 import CartProvider from './components/contexts/CartContext/CartProvider'
 import CartContainer from './components/CartContainer/CartContainer'
-import { useEffect } from 'react'
-import { getFirestore, collection, getDocs } from 'firebase/firestore'
+import CheckOutContainer from './components/CheckOutContainer/CheckOutContainer'
 
 
 function App() {
@@ -18,7 +17,7 @@ function App() {
     <BrowserRouter> 
     <CartProvider>
     <Layout>
-    {/* <ItemListContainer greating="WIDISTOREOK"/> */}
+
      <Routes>
       <Route path="/" element={<ItemListContainer/>}/>         
       <Route path="/seccion/:id" element={<ItemListContainer/>}/> 
@@ -27,6 +26,7 @@ function App() {
       <Route path="/seccion/marcas/:idMarca" element={<ItemListContainer/>} />
       <Route path="/seccion/vapes" element={<ItemListVapeContainer />} />
       <Route path="/seccion/carrito" element={<CartContainer/>} />
+      <Route path="/seccion/checkout" element={<CheckOutContainer/>} />
       <Route path="/secciones/*" element={<h1>NOT FOUND</h1>} />
     </Routes>
     

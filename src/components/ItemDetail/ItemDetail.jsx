@@ -32,7 +32,7 @@ export default function ItemDetail({ item }) {
     <div className="itemContainer">
       <NavLink to={`/item/${item.id}`}>
       <div className="itemImgContainer">
-        <img className="itemImg" src={`../../src/Perfumes/${item.image}`} alt={item.nombre} />
+        <img className="itemImg" src={item.image} alt={item.nombre} />
       </div>
       </NavLink>
       <h2 className="itemMarca">{item.marca}</h2>

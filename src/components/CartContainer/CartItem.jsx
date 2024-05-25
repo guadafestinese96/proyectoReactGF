@@ -7,7 +7,7 @@ export default function CartItem({item}){
 
     return(
         <div key={item} className="itemCart">
-            <img className="itemImgCart" src={`../../src/Perfumes/${item.product.image}`} alt={item.nombre} />
+            <img className="itemImgCart" src={item.product.image} alt={item.nombre} />
             <div className="detalleItem">
             <p className="fraganceName">{item.product.nombre}</p>
             <p className="fraganceDetail">{item.product.genero}</p>

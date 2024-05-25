@@ -3,12 +3,14 @@ import usePerfume from "../../hooks/usePerfume";
 import ItemDetail from "../ItemDetail/ItemDetail";
 import { useParams } from "react-router-dom";
 import "./ItemDetailContainer.css"
+import usePerfumeFirebase from "../../hooks/usePerfumeFirebase";
+
 
 
 export default function ItemDetailContainer(){
 
     const {id} = useParams();
-    const {perfume, isLoading} = usePerfume(parseInt(id));
+    const {perfume, isLoading} = usePerfumeFirebase(id);
 
     if (isLoading) return <h1>Cargando...</h1>
     console.log(id);

@@ -6,6 +6,7 @@
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     border-radius: 5px;
     border: 2px solid black;
+    margin: 5px;
 }
 
 .clearCart:hover{
