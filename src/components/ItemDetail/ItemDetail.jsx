@@ -8,30 +8,18 @@ import { useContext } from "react";
 
 export default function ItemDetail({ item }) {
   const { count, increment, decrement, reset } = useCount(0);
-  
-  const {addToCart, cart} = useContext(CartContext);
 
-  const onAdd = (nombreDeItem, cantidadaLlevar) => {
-    console.log("nombreDeItem: ", nombreDeItem);
-    console.log("cantidadaLlevar: ", cantidadaLlevar);
-  };
+  const {addToCart} = useContext(CartContext);
 
   const handleAddToCart= ()=>{
-    onAdd(item,count)
     Swal.fire({
       title: "Agregado al carrito",
       icon: "success",
     })
     addToCart(item, count);
-
-    console.log(item.stock)
-    console.log(count)
     item.stock = item.stock - count;
-    console.log(item.stock)
-    
     reset();
   }
-
 
 
   return (
@@ -45,14 +33,16 @@ export default function ItemDetail({ item }) {
       <p className="itemNombre">{item.nombre}</p>
       <p className="itemGenero">{item.genero}</p>
       <p className="itemPrecio">${item.precio}</p>
+      
       <div className="contenedorContador">
         <ItemCount
           stock={item.stock}
           count={count}
           increment={increment}
-          decrement={decrement}
+          decrement={decrement} 
         />
       </div>
+      
       <div className="itemCartContainer">
         <button
           className="itemCartButton"

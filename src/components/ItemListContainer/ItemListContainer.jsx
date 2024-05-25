@@ -1,6 +1,5 @@
 import ItemList from "../ItemList/ItemList";
 import "./ItemListContainer.css"
-import usePerfumes from "../../hooks/usePerfumes";
 import { useParams } from "react-router-dom";
 import usePerfumesMarcaFirebase from "../../hooks/usePerfumesMarcaFirebase";
 
