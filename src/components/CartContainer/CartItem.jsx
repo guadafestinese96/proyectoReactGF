@@ -20,7 +20,7 @@ export default function CartItem({item}){
             <button
           className="buttonAdd"
           onClick={() => addToCart(item.product, 1)}
-        disabled={item.quantity === item.product.stock}>
+        disabled={item.quantity > item.product.stock }>
           +
         </button>
         

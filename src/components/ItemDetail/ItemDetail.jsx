@@ -23,6 +23,12 @@ export default function ItemDetail({ item }) {
       icon: "success",
     })
     addToCart(item, count);
+
+    console.log(item.stock)
+    console.log(count)
+    item.stock = item.stock - count;
+    console.log(item.stock)
+    
     reset();
   }
 
