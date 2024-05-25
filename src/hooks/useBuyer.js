@@ -1,18 +1,23 @@
 import { useState } from "react";
 
 export default function useBuyer() {
-  const [buyer, setBuyer] = useState({
-    name: "",
-    email: "",
-    lastName: "",
-  });
+    const initialValue = {
+        name: "",
+        email: "",
+        lastName: "",
+}
+    const [buyer, setBuyer] = useState(initialValue);
 
-  const handleInputChange = (e) => {
-    setBuyer({
-      ...buyer,
-      [e.target.name]: e.target.value,
-    });
-  };
+    const handleInputChange = (e) => {
+        setBuyer({
+            ...buyer,
+            [e.target.name]: e.target.value,
+        });
+    };
 
-  return { buyer, handleInputChange };
+    const resetInput = (e) => {
+        setBuyer = initialValue;
+    }
+
+    return { buyer, handleInputChange, resetInput };
 }
