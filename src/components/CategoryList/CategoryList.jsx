@@ -3,10 +3,6 @@ import { NavLink } from 'react-router-dom';
 
 const MIS_RUTAS=[
     {
-        path: "/seccion/filtrar",
-        label:"FILTRAR",
-    },
-    {
         path: "/seccion/marcas/pacorabanne",
         label:"PACO RABANNE",
     },
@@ -16,10 +12,6 @@ const MIS_RUTAS=[
     },{
         path: "/seccion/marcas/armani",
         label:"ARMANI",
-    },
-    {
-        path: "/seccion/vapes",
-        label:"VAPES",
     }
 ]
 function CategoryList(){
