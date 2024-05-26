@@ -43,7 +43,7 @@ export default function CheckOutContainer() {
         const ordersCollection = collection(db, "orders");
 
         addDoc(ordersCollection, order).then(async ({ id }) => {
-            if ((buyer.name === "") || (buyer.email === "") || (buyer.apellido === "")) {
+            if ((buyer.name === "") || (buyer.apellido === "")|| (buyer.email === "") ) {
                 Swal.fire({
                     title: "Los campos no pueden estar vacíos",
                     icon: "error"
@@ -91,17 +91,6 @@ export default function CheckOutContainer() {
                             onChange={handleInputChange}
                         />
                     </div>
-                    <div className="datosForm emailForm">
-                        <label className="labelForm">Email</label>
-                        <input
-                            type="email"
-                            placeholder="Email"
-                            className="inputEmail"
-                            name="email"
-                            value={buyer.email}
-                            onChange={handleInputChange}
-                        />
-                    </div>
                     <div className="datosForm apellidoForm">
                         <label className="labelForm">Apellido</label>
                         <input
@@ -113,6 +102,18 @@ export default function CheckOutContainer() {
                             onChange={handleInputChange}
                         />
                     </div>
+                    <div className="datosForm emailForm">
+                        <label className="labelForm">Email</label>
+                        <input
+                            type="email"
+                            placeholder="Email"
+                            className="inputEmail"
+                            name="email"
+                            value={buyer.email}
+                            onChange={handleInputChange}
+                        />
+                    </div>
+                    
                 </div>
                 <CartDetails cart={cart} cartTotal={cartTotal} />
                 <button
