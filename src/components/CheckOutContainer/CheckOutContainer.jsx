@@ -16,7 +16,8 @@ import useBuyer from "../../hooks/useBuyer";
 
 export default function CheckOutContainer() {
     const { cart, clearCart, cartTotal } = useContext(CartContext);
-    const { buyer, handleInputChange, resetInput } = useBuyer();
+    const { buyer, handleInputChange } = useBuyer();
+    
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -47,13 +48,19 @@ export default function CheckOutContainer() {
                     title: "Los campos no pueden estar vacíos",
                     icon: "error"
                 });
-            } else {
+            } else if(cart.length === 0){
+                Swal.fire({
+                    title: "No hay productos en el carrito",
+                    icon: "error"
+                }); 
+            }
+            else {
                 Swal.fire({
                     title: (`Compra realizada con éxito, tu id de orden es: ${id}`),
                     icon: "success",
                 })
                 clearCart();
-
+               
                 for (const itemInCart of cart) {
                     const productRef = doc(db, "perfumes", itemInCart.product.id);
                     const product = await getDoc(productRef);

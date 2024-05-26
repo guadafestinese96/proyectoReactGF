@@ -57,10 +57,13 @@ export default function ItemDetail({ item }) {
         >
           Agregar Al Carrito
         </button>
+       
       </div>
       <p className="disponibles">
         Quedan <strong>{item.stock - count}</strong> unidades disponibles
-      </p>
+      </p>    
     </div>
   );
+
+  
 }

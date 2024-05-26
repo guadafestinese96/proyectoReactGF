@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import TaskList from "./TaskList"
 import FilterOptions from "./FilterOptions"
 import { getPerfumes } from "../mock/asyncMock"
-import useFilter from "./useFilter"
+import useFilter from "../../hooks/useFilter"
 import "./FilterContainer.css"
 
 const TaskListContainer = () => {

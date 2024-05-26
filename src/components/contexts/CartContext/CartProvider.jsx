@@ -10,7 +10,6 @@ export default function CartProvider({ children }) {
     const itemInCart = cart.find((item) => item.product.id === product.id);
 
     if (itemInCart) {
-     
       const updatedCart = cart.map((item) => {
         if (item.product.id === product.id) {
           return { product, quantity: item.quantity + quantity };

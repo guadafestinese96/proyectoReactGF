@@ -15,9 +15,5 @@ export default function useBuyer() {
         });
     };
 
-    const resetInput = (e) => {
-        setBuyer = initialValue;
-    }
-
-    return { buyer, handleInputChange, resetInput };
+    return { buyer, handleInputChange };
 }

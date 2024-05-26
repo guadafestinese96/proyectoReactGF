@@ -1,5 +1,4 @@
 import './CartIcon.css'
-import { NavLink } from 'react-router-dom';
 
 function CartIcon({ ancho, alto }) {
     return (

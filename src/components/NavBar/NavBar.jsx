@@ -1,10 +1,6 @@
-//Combinacion de card widget y category list
-
 import CategoryList from "../CategoryList/CategoryList";
 import CartWidget from "../CartWidget/CartWidget";
 import './NavBar.css'
-import { useContext } from "react";
-import CartContext from "../contexts/CartContext/CartContext";
 
 function NavBar(){
     

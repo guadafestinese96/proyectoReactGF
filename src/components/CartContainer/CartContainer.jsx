@@ -12,7 +12,12 @@ export default function CartContainer(){
         <div className="cartContainer">
             <h1>CARRITO</h1>
             {cart.length === 0 ? (
+                <div>
             <h2 className="clearCartText">Aún no hay productos en el carrito</h2>
+            <NavLink to="/seccion/inicio">
+            <button className="clearCart">COMPRAR</button>
+            </NavLink>
+            </div>
             ):(
                 cart.map((item)=>{
                 return <CartItem key={item.product.id} item={item} />;
