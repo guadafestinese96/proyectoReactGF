@@ -1,10 +1,11 @@
 import { NavLink } from "react-router-dom";
+import logoWidi from "../assets/widiLogoRedondo.png";
 
 function Brand(){
     return(
         <div>
             <NavLink to={"/"}>
-            <img src="../../src/assets/widiLogoRedondo.png" alt="logoWidi" className="logoWidiImg"/>
+            <img src={logoWidi} alt="logoWidi" className="logoWidiImg"/>
             </NavLink>
         </div>
     )
