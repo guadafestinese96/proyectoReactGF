@@ -13,25 +13,25 @@
     background-color: white;
     padding-bottom: 15px;
     padding-top: 0;
+    
 }
 
 .itemMarca{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: 100;
-    font-size: 20px;
-    text-transform: capitalize;
+    font-size: 15px;
     padding: 0;
     height: 5px;
     justify-content: center;
     align-items: center;
     display: flex;
+    text-transform: uppercase;
 }
 
 .itemNombre, .itemPrecio, .itemGenero{
     justify-content: center;
     margin: 0;
     padding: 8px;
-    font-size: 15px;
     align-items: center;
     display: flex;
     height: 1px;
@@ -39,7 +39,7 @@
 }
 
 .itemGenero{
-    font-size: 13px;
+    font-size: 5px;
 }
 
 .itemPrecio{
@@ -111,4 +111,5 @@
     color:#ff13a7;
     background-color: black;
     border-radius: 5px;
+    width: 100px;
 }

@@ -1,5 +1,5 @@
 import Item from "./Item"
-import "./Item.css"
+import './Item.css'
 
 export default function ItemList({ perfumes }) {
     return (

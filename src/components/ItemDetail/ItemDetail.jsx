@@ -53,7 +53,7 @@ export default function ItemDetail({ item }) {
                icon: "success",
            })
            }}
-          disabled={count === 0} 
+          disabled={count === 0 } 
         >
           Agregar Al Carrito
         </button>
